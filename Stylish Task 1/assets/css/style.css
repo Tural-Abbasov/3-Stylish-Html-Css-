@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.navBox{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    border-radius: 6px;
+}
+
+.navBox:hover{
+    background: #343a40;
+}
+
+.headBox{
+    height: 900px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../image/bg-masthead.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 330px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.headBox>h1{
+    font-size: 84px;
+    color: #212529;
+    padding-bottom: 5px;
+}
+
+.headBox>h3{
+    font-size: 28px;
+    color: #212529;
+    margin-bottom: 50px;
+}
+
+.headBox>a{
+    background-color: #1D809F;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.headBox>a:hover{
+    background-color: #17667f;
+}
+
+
+/* sector two  */
+
+
+.mainBoxOne{
+    height: 400px;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding-top: 120px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainBoxOne>h2{
+    font-size: 33px;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.mainBoxOne>p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.mainBoxOne>p>a{
+    font-size: 20px;
+    color: #1D809F;
+}
+
+.mainBoxOne>a{
+    background-color: #212529;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.mainBoxOne>a:hover{
+    background-color: #424649;
+}
+
+/* sector three */
+
+
+.mainBoxTwo{
+    height: 500px;
+    background-color: #1D809F;
+    padding: 100px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainBoxTwo>h3{
+    font-size: 16px;
+    color: #ecb807;
+    text-transform: uppercase;
+}
+
+.mainBoxTwo>h2{
+    font-size: 48px;
+    color: white;
+}
+
+.cardBox{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconBox{
+    width: 30%;
+    font-family: "Open Sans", sans-serif;
+}
+
+.iconBox>div{
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    color: #1D809F;
+    font-size: 30px;
+    padding-top: 25px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.iconBox>h4{
+    font-size: 24px;
+    margin-top: 15px;
+    color: white;
+}
+
+.iconBox>p{
+    font-size: 16px;
+    margin-top: 15px;
+    color: white;
+}
+
+
+/* sector four  */
+
+.mainBoxThree{
+    height: 700px;
+    padding-top: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #212529;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../image/bg-callout.jpg);
+}
+
+.mainBoxThree>h2{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.mainBoxThree>a{
+    background-color: #1D809F;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.mainBoxThree>a:hover{
+    background-color: #17667f;
+}
+
+/* sector five  */
+
+
+.mainBoxFour{
+    height: 1150px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainBoxFour>h3{
+    font-size: 20px;
+    color: #ecb807;
+    text-transform: uppercase;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.mainBoxFour>h2{
+    font-size: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photoBox{
+    width: 37%;
+    margin: -1px;
+    height: 400px;
+    clip-path: inset(0px);
+    transition: 0.5s;
+    position: relative;
+}
+
+.photoBox:hover{
+    clip-path: inset(30px);
+} 
+
+.photoBox:hover .overlay{
+    background-color: rgba(29, 128, 159, 0.9);
+}
+
+.photoBox>img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    transition: 0.5s;
+}
+
+.contentBox{
+    position: absolute;
+    bottom: 80px;
+    color: white;
+}
+
+.contentBox>h2{
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contentBox>p{
+    width: 90%;
+    font-size: 17px;
+}
+
+
+/* sector six  */
+
+
+.mainBoxFive{
+    height: 350px;
+    background-color: #1D809F;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainBoxFive>h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.btnBox>a{
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.btnBox>a:hover{
+    background-color: #c6c7c8;
+}
+
+#btnBoxTwo{
+    background-color: #212529;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+#btnBoxTwo:hover{
+    background-color: #373b3e;
+}
+
+
+/* sector seven  */
+
+.mainBoxSix{
+    height: 450px;
+}
+
+/* sector eight  */
+
+.footerBox{
+    height: 250px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footCard{
+    width: 15%;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footicon{
+    width: 25%;
+    height: 70px;
+    background-color: #1D809F;
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.footicon:hover{
+    background-color: #17667f;
+}
+
+.footerBox>p{
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+
